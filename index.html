@@ -25,6 +25,9 @@
 
         header h1 {
             margin: 0;
+            font-family: 'Arial', sans-serif; /* Set the sans-serif typeface */
+            font-weight: bold;
+            font-style: italic;
         }
 
         nav ul {
@@ -52,6 +55,40 @@
             background-color: #1f1f1f;
             border-radius: 5px;
             color: #e0e0e0;
+        }
+
+        section h2 {
+            text-align: center; /* Center the "Our Services" heading */
+        }
+
+        .service {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #2b2b2b;
+            border-radius: 5px;
+            text-align: center; /* Center the content within each service div */
+        }
+
+        .service img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .service video {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            margin: 10px 0;
+        }
+
+        .about-img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px;
+            display: block;
+            margin: 0 auto 15px auto; /* Center the image */
         }
 
         footer {
@@ -155,7 +192,6 @@
 <body>
     <header>
         <h1>Torque and Gloss Studio</h1>
-        <h2>Where torque meets gloss...</h2>
         <nav>
             <ul>
                 <li><a href="#services">Services</a></li>
@@ -166,10 +202,35 @@
     </header>
     <section id="services">
         <h2>Our Services</h2>
-        <p>We offer a variety of car detailing services to keep your vehicle looking its best.</p>
+        <div class="service">
+            <h3>Foam Wash</h3>
+            <img src="PPF.png" alt="Foam Wash Image">
+            <p>Experience a thorough and gentle foam wash to keep your vehicle looking pristine.</p>
+        </div>
+        <div class="service">
+            <h3>Ceramic Coating</h3>
+            <img src="PPF.png" alt="Ceramic Coating Image">
+            <p>Protect your vehicle with our advanced ceramic coating services.</p>
+        </div>
+        <div class="service">
+            <h3>Graphene Coating</h3>
+            <img src="PPF.png" alt="Graphene Coating Image">
+            <p>Enhance your vehicle's appearance and protection with graphene coating.</p>
+        </div>
+        <div class="service">
+            <h3>PPF (Paint Protection Film)</h3>
+            <img src="PPF.png" alt="PPF Image">
+            <p>Get the ultimate protection for your vehicle's paint with our PPF services.</p>
+        </div>
+        <div class="service">
+            <h3>Accessories</h3>
+            <video src="path/to/accessories.mp4" controls></video>
+            <p>Explore a range of high-quality accessories to complement your vehicle.</p>
+        </div>
     </section>
     <section id="about">
         <h2>About Us</h2>
+        <img src="Shakal.png" alt="Shakal Image" class="about-img">
         <p>We are a professional car detailing studio with years of experience in the industry.</p>
     </section>
     <section id="contact">
@@ -182,12 +243,12 @@
             <a href="https://www.whatsapp.com" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
         </div>
     </section>
-    
+
     <audio id="revving-sound" src="3seconds.mp3" preload="auto"></audio>
     <button id="play-sound">Play Revving Sound</button>
-    
+
     <footer>
-        <p>&copy; 2025 Car Detailing Studio</p>
+        <p>&copy; 2024 All rights reserved for TG Studio</p>
     </footer>
     
     <div class="bottom-nav">
